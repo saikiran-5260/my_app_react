@@ -1,19 +1,13 @@
-// import logo from "./logo.svg";
 import "./App.css";
-import React from "react";
 
-class App extends React.Component {
+import React, { Component } from "react";
+import Pokegame from "./Pokegame";
+
+class App extends Component {
   render() {
-    const fullName = this.props;
-
     return (
-      <div>
-        <h1>{fullName.s1}</h1>
-        <h1>{fullName.s2}</h1>
-        <h1>
-          {fullName.s3}
-          {"!".repeat(this.props.num)}
-        </h1>
+      <div className="App">
+        <Pokegame />
       </div>
     );
   }
